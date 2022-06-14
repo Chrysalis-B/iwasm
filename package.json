@@ -2,7 +2,6 @@
   "name": "iwasm",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "node tests",
     "asbuild:debug": "asc assembly/index.ts --target debug",
@@ -12,9 +11,6 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@assemblyscript/loader": "^0.20.11"
-  },
   "devDependencies": {
     "assemblyscript": "^0.20.11"
   },
