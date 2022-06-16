@@ -4,8 +4,11 @@
 <head>
   <title>iwasm</title>
   <script type="module">
-    import { minusOne, fizzbuzz } from "./build/release.js";
-    document.body.innerText = `789 minus 1 is ${minusOne(789)}, fizzbuzz returns ${fizzbuzz(789)}`;
+    import { minusOne, fizzbuzz, readMemory } from "./build/release.js";
+    document.body.innerText = `
+    789 minus 1 is ${minusOne(789)}, 
+    fizzbuzz returned ${fizzbuzz(789)}, 
+    number stored at index 1 in memory is ${readMemory(1)}`;
   </script>
 </head>
 
